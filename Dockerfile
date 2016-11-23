@@ -1,15 +1,6 @@
 FROM debian:testing
 MAINTAINER Alexander Shevchenko <kudato@me.com>
-
 ENV DEBIAN_FRONTEND noninteractive
-
-ENV EMAIL kudato@me.com
-
-ENV GIT_USER nosetuser
-ENV GIT_PASS nosetpass
-
-ENV REPO external
-ENV BRANCH master
 
 RUN ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime && \
     mv /etc/localtime  /etc/localtime-old && \
